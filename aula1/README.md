@@ -5,7 +5,7 @@
    * precisa subir com o ambiente do hadoop no docker. A configuração e instalação do que é necessário estão nesse [Hadoop Docker](https://github.com/fabiogjardim/bigdata_docker/)
    O trabalho consiste em aplicar os conceitos e comandos da matéria HIVE nas aulas de DDPS.
    O dataset utiliza a ideia de uma empresa de artigos de esportes radicais e acessorios.
-   O link para o dataset esta nesse [linkhttps://drive.google.com/drive/folders/1OfZTSYcgcun-S7UFNVAzbcr0-PzlEc08
+   O dataset esta para a atividade está nesse [link](https://drive.google.com/drive/folders/1OfZTSYcgcun-S7UFNVAzbcr0-PzlEc08)
    * esse script é recomendado a ser executado em ambiente linux
    * antes de executar o script certifique-se de em sua máquina os seguintes modulos estejam instalados:
    
