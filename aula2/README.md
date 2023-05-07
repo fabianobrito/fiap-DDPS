@@ -11,8 +11,9 @@
     
      *  ter o pip do pacote python instalado 
      *  sudo apt-get install libsasl2-dev
-     *  sudo pip install 'sasl'
+     *  sudo pip install sasl
      *  sudo pip install thrift_sasl
+     *  sudo pip install pyhive
       
    * antes de executar o script certifique-se que o ambiente hadoop no docker esta funcionando e com usuário root da máquina
    * execute o script python estando na raiz do projeto através do comando 'python3 aula2/main.py'
