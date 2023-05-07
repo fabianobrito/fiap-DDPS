@@ -5,6 +5,7 @@
    * precisa subir com o ambiente do hadoop no docker. A configuração e instalação do que é necessário estão nesse [Hadoop Docker](https://github.com/fabiogjardim/bigdata_docker/)
    * esse script é recomendado a ser executado em ambiente linux
    * antes de executar o script certifique-se de em sua máquina os seguintes modulos estejam instalados:
+   
     *  sudo apt-get install libsasl2-dev
     *  sudo pip install 'sasl'
     *  sudo pip install thrift_sasl
