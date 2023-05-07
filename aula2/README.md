@@ -8,9 +8,11 @@
    O dataset esta para a atividade está nesse [link](https://drive.google.com/drive/folders/1OfZTSYcgcun-S7UFNVAzbcr0-PzlEc08)
    * esse script é recomendado a ser executado em ambiente linux
    * antes de executar o script certifique-se de em sua máquina os seguintes modulos estejam instalados:
-    *  ter o pip do pacote python instalado 
-    *  sudo apt-get install libsasl2-dev
-    *  sudo pip install 'sasl'
-    *  sudo pip install thrift_sasl
+    
+     *  ter o pip do pacote python instalado 
+     *  sudo apt-get install libsasl2-dev
+     *  sudo pip install 'sasl'
+     *  sudo pip install thrift_sasl
+      
    * antes de executar o script certifique-se que o ambiente hadoop no docker esta funcionando
    * execute o script python estando na raiz do projeto através do comando 'python3 aula2/main.py'
