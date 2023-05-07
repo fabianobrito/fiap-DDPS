@@ -2,8 +2,8 @@
 
 ## EXECUTAR 
 ## Para executar o script
-   * precisa subir com o ambiente do hadoop no docker. A configuração e instalação do que é necessário estão nesse [Hadoop Docker](https://github.com/fabiogjardim/bigdata_docker/)
-   O trabalho consiste em aplicar os conceitos e comandos da matéria HIVE nas aulas de DDPS.
+   precisa subir com o ambiente do hadoop no docker. A configuração e instalação do que é necessário estão nesse [Hadoop Docker](https://github.com/fabiogjardim/bigdata_docker/)\n
+   O trabalho consiste em aplicar os conceitos e comandos da matéria HIVE nas aulas de DDPS.\n
    O dataset utiliza a ideia de uma empresa de artigos de esportes radicais e acessorios.
    O dataset esta para a atividade está nesse [link](https://drive.google.com/drive/folders/1OfZTSYcgcun-S7UFNVAzbcr0-PzlEc08)
    * esse script é recomendado a ser executado em ambiente linux
