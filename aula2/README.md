@@ -14,5 +14,5 @@
      *  sudo pip install 'sasl'
      *  sudo pip install thrift_sasl
       
-   * antes de executar o script certifique-se que o ambiente hadoop no docker esta funcionando
+   * antes de executar o script certifique-se que o ambiente hadoop no docker esta funcionando e com usuário root da máquina
    * execute o script python estando na raiz do projeto através do comando 'python3 aula2/main.py'
