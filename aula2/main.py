@@ -88,6 +88,17 @@ def iniciar_carga_hdfs():
     print(cursor.fetchall())
     print("Fim")
 
+    # select c.customerid, sh.salesorderid from adventureworks.customer c join
+    # adventureworks.salesorderderhead sh on
+    # c.customerid = sh.customerid
+    # where sh.customerid is not null;
+
+    # select sd.salesorderdetailid, sd.salesorderid, p.productid
+    # from adventureworks.product p join
+    # adventureworks.salesorderdetail sd
+    # on sd.productid = p.productid
+    # where sd.productid is not null;
+
 
 if __name__ == '__main__':
     iniciar_carga_hdfs()
