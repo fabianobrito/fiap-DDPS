@@ -4,11 +4,10 @@ spark = SparkSession \
     .builder \
     .appName("Python Spark SQL basic example") \
     .config("spark.some.config.option", "some-value") \
+    .config("spark.sql.catalogImplementation", "hive") \
     .getOrCreate()
 sqlContext = HiveContext(spark)
-sqlContext.sql("""create external table diabetes_patient_data 
-(gender string, age integer, hypertension int, heart_disease int, smoking_history string, bmi double, HbA1c_level double, blood_glucose_level integer, diabetes integer) 
-row format delimited fields terminated by ','LOCATION '/user/trab3-spark/diabetes_patient_data'""").show()
+sqlContext.sql("create external table diabetes_patient_data (gender string, age integer, hypertension int, heart_disease int, smoking_history string, bmi double, HbA1c_level double, blood_glucose_level integer, diabetes integer) row format delimited fields terminated by ',' LOCATION '/user/trab3-spark/diabetes_patient_data'")
 df = spark.read.csv("/user/trab3-spark/diabetes_prediction_dataset.csv", sep =',', inferSchema = True, header = True)
 df.printSchema()
 # Renomeando colunas atraeves da funcao - withColumnRenamed
@@ -24,14 +23,6 @@ df = df.withColumnRenamed("heart_disease", "doenca_cardiaca")
 # GrupBy em gender e diabetes.
 # Na media os homens que possui diabetes possui na media 60 anos e tem um IMC na meia de 31,28 - primeira linha
 df.groupBy("genero","diabetes").mean("idade","IMC").show()
-# Estou selecionado somente quem tem diabetes
-df_diabetes = df.filter(df.diabetes == 1).show()
-# historico de fumante
-# quem nunca fumou possui possui uma media de 60 anos e um IMC de 32. 
-# Quem fuma atualmente possui uma media de 55 anos e um IMC 31. 
-# Aparentemente essas duas categorias nao possui nenhum diferenca estatistica para IMC
-# mas tem para idade
-df_diabetes.groupBy("tabagismo_historia").mean("idade","IMC").show()
 # Ordenando a variavel age
 df.sort("idade").show()
 # Temos no arquivo idade de 0,08 anos. SEgundo pesquisa no google crianca dessa idade pode sim ter diabetes
